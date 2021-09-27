@@ -1,0 +1,97 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: rgb(109, 1, 255);
+  background: linear-gradient(
+    50deg,
+    rgba(109, 1, 255, 1) 13%,
+    rgba(255, 79, 217, 1) 83%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: lightgrey !important;
+  margin-bottom: 30px;
+  /* overflow:hidden; */
+}
+
+.column-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-box {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-task-input {
+  display: flex;
+}
+
+.add-task-input input {
+  display: block;
+  width: calc(100% - 70px);
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.add-task-input button,
+button {
+  display: block;
+  width: 70px;
+  border: none;
+  outline: none;
+  background-color: #ffbf2b;
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+
+.edit {
+  width: fit-content;
+  background-color: green;
+  border-radius: 5px 0 0 5px;
+}
+
+.delete {
+  width: fit-content;
+  background-color: red;
+  border-radius: 0 5px 5px 0;
+}
+
+.deleteallbtn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.deleteallbtn i {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 280px;
+}
